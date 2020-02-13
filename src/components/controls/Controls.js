@@ -2,15 +2,14 @@ import React from 'react';
 import styles from './Controls.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { drinkCoffee, eatSnack, takeNap, study } from '../../actions/moodAction';
-import store from '../../store';
 
 
 
 const Controls = () => {
 
   const { coffees, snacks, naps, studies } = useSelector(state => state);
-  // const state = store.getState();
   const dispatch = useDispatch();
+
   
   const handleCoffee = event => {
     event.preventDefault;
@@ -41,9 +40,6 @@ const Controls = () => {
       <button onClick={handleStudies}>studies - {studies}</button>
     </section>
   );
-}
-
-
-
+};
 
 export default Controls;
