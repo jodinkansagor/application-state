@@ -6,7 +6,7 @@ import {
   EXERCISE,
 } from '../actions/moodAction';
 
-export default function reducer(state, action) {
+export default function reducer(state = { coffees: 0, snacks: 0, naps: 0, studies: 0 }, action) {
   switch(action.type){
     case DRINK_COFFEE:
       return { ...state, coffees: state.coffees + 1 };
@@ -19,6 +19,6 @@ export default function reducer(state, action) {
     case EXERCISE:
       return { ... state, exercises: state.exercises + 1 };
     default:
-      return console.log(`unhandled type: ${action.type}`);
+      return state;
   }
 };

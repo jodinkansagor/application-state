@@ -1,12 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Face.css';
+import { useSelector } from 'react-redux';
+import { getFace } from '../../selectors/moodSelector';
 
-const Face = ({ emoji }) =>{
+const Face = () => {
+  const emoji = useSelector(getFace);
 
-<p className={styles.Face}>{emoji}</p>;
-} 
-
-
+  return (
+    < p className={styles.Face} >
+      {emoji}
+    </p >
+  );
+};
 
 export default Face;
