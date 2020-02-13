@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Face.css';
 
-const Face = ({ emoji }) => <p className={styles.Face}>{emoji}</p>;
+const Face = ({ emoji }) =>{
 
-Face.propTypes = {
-  emoji: PropTypes.string.isRequired
-};
+<p className={styles.Face}>{emoji}</p>;
+} 
+
+
 
 export default Face;
