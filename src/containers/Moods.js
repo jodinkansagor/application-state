@@ -11,6 +11,5 @@ const Moods = () => (
   </>
 );
 
-Moods.propTypes = {};
 
 export default Moods;

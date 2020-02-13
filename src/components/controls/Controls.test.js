@@ -8,7 +8,6 @@ describe('Controls component', () => {
   let wrapper;
   beforeEach(() => {
     
-
     wrapper = shallow(<Provider store={store}> <Controls /> </Provider>).dive();
   });
 

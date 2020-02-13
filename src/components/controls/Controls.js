@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { drinkCoffee, eatSnack, takeNap, study } from '../../actions/moodAction';
 
 
-
 const Controls = () => {
 
   const { coffees, snacks, naps, studies } = useSelector(state => state);

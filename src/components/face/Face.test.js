@@ -6,7 +6,7 @@ import store from '../../store';
 
 describe('Face component', () => {
   it('renders Face', () => {
-    const wrapper = shallow(<Provider store={store}> <Face emoji="😀" /></Provider>).dive;
+    const wrapper = shallow(<Provider store={store}> <Face emoji="😀" /></Provider>).dive();
     expect(wrapper).toMatchSnapshot();
   });
 });
